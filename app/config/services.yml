@@ -1,0 +1,24 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+  #PRODUCT SERVICES
+  get_products:
+    class: AppBundle\Service\GetProducts
+    arguments: ["@product_repository"]
+
+  import_products:
+    class: AppBundle\Service\ImportProducts
+    arguments: ["@product_repository"]
+
+  string_format:
+    class: AppBundle\Service\StringFormat
+
+  #REPOSITORY SERVICES
+  product_repository:
+    class: AppBundle\Entity\SQLProductRepository
+    factory_service: doctrine.orm.default_entity_manager
+    factory_method: getRepository
+    arguments: [AppBundle\Entity\Product]

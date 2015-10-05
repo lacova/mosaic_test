@@ -1,0 +1,14 @@
+AppBundle\Entity\Product:
+  type: entity
+  repositoryClass: SQLProductRepository
+  fields:
+    ean:
+      id: true
+      type: string
+      length: 13
+    name:
+      type: string
+    price:
+      type: float
+    active:
+      type: boolean
