@@ -1,6 +1,6 @@
 AppBundle\Entity\Product:
   type: entity
-  repositoryClass: SQLProductRepository
+  repositoryClass: DoctrineProductRepository
   fields:
     ean:
       id: true

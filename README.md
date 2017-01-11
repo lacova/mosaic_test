@@ -11,5 +11,6 @@ Mosaic Access Test
 8. Implement Product constructor. [2] [Twig]
 9. Fer que el twig renderitzi el llistat de productes. [3] [Twig]
 10. Afegir una ruta per a l'acció d'importar. Només acceptar paràmetres POST. [3] [Routing]
-11. Implementar funció de llegir CSV [4] [PHP]
-12. Implementar la funció de formatar string i passar els tests. [5] [PHPunit]
+11. Definir i invocar un servei per a obtenir els productes. [3] [Services]
+12. Implementar funció de llegir CSV [4] [PHP]
+13. Implementar la funció de formatar string i passar els tests. [5] [PHPunit]

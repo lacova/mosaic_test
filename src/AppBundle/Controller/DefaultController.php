@@ -9,7 +9,8 @@ class DefaultController extends Controller
 
     public function indexAction()
     {
-        $products = $this->container->get('get_products')->__invoke();
+        //ToDo 11: Call get_products service to retrieve all products
+        $products = null;
 
         //ToDo 7: Pass products to the twig template
         return $this->render('default/products_list.html.twig');
@@ -21,6 +22,6 @@ class DefaultController extends Controller
 
         $csvPath = $appDir . "/Resources/csv/products.csv";
 
-        $this->container->get('import_products')->__invoke($csvPath);
+        $this->get('import_products')->__invoke($csvPath);
     }
 }

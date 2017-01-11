@@ -5,9 +5,8 @@ parameters:
 
 services:
   #PRODUCT SERVICES
-  get_products:
-    class: AppBundle\Service\GetProducts
-    arguments: ["@product_repository"]
+  #ToDo 11: Define get_product service
+  #Tip: The service is already created inside the Service folder, you just have to declare it!
 
   import_products:
     class: AppBundle\Service\ImportProducts
@@ -18,7 +17,6 @@ services:
 
   #REPOSITORY SERVICES
   product_repository:
-    class: AppBundle\Entity\SQLProductRepository
-    factory_service: doctrine.orm.default_entity_manager
-    factory_method: getRepository
-    arguments: [AppBundle\Entity\Product]
+    class: AppBundle\Entity\DoctrineProductRepository
+    factory: ['@doctrine.orm.default_entity_manager', 'getRepository']
+    arguments: ['AppBundle\Entity\Product']

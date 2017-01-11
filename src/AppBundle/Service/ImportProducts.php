@@ -19,11 +19,11 @@ final class ImportProducts
     /**
      * @param string $csvFilePath
      *
-     * @throws @fileNotFoundException when the requested file cannot be found
+     * @throws @FileNotFoundException when the requested file cannot be found
      */
     public function __invoke($csvFilePath)
     {
-        //ToDo 11: Implement function to read the CSV and store it to the database
+        //ToDo 12: Implement function to read the CSV and store it to the database
         //Tip: Being $product a Product instance, the following method adds it to the database:
         $this->productRepository->addProduct($product);
     }

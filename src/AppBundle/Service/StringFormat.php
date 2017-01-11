@@ -9,6 +9,6 @@ class StringFormat
      * @return string
      */
     public function __invoke($originalString){
-        //ToDo 12: Implement function
+        //ToDo 13: Implement function
     }
 }

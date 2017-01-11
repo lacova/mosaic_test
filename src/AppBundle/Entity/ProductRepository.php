@@ -2,8 +2,6 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Entity\Product;
-
 interface ProductRepository
 {
     /**

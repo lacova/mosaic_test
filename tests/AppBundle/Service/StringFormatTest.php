@@ -1,10 +1,11 @@
 <?php
 
-namespace AppBundle\Tests\Controller;
+namespace Tests\AppBundle\Service;
 
 use AppBundle\Service\StringFormat;
+use PHPUnit\Framework\TestCase;
 
-class StringFormatTest extends \PHPUnit_Framework_TestCase
+class StringFormatTest extends TestCase
 {
     public function stringFormattingTestProvider()
     {

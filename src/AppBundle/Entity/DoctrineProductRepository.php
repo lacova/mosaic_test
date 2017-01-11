@@ -3,9 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
-use AppBundle\Entity\Product;
 
-final class SQLProductRepository extends EntityRepository implements ProductRepository
+final class DoctrineProductRepository extends EntityRepository implements ProductRepository
 {
     /**
      * @param $product
