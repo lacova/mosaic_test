@@ -4,8 +4,10 @@
     <h1>Product list</h1>
     <ul>
         {# ToDo 9: Get products an iterate over them and set them in the list #}
-        <li>{{ custom_format_string.__invoke("product name") }} - EAN - Price &euro;</li>
+        <li>{{ custom_format_string.__invoke("(product name here)") }} - (product EAN here) - (product price here) &euro;</li>
     </ul>
     <hr/>
+    {# ToDo 14: Change import method invocation to POST#}
     <a id="import_button" href="{{ path("import") }}">Import From CSV</a>
+
 {% endblock %}

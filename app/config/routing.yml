@@ -4,4 +4,5 @@ homepage:
 
 import:
   path: /import_products
-# ToDo 10: Add a route to the import action. Accept only POST requests.
+# ToDo 10: Complete import action route definition. / ToDo 14:  Restrict route to accept only POST requests.
+
