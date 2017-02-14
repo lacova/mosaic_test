@@ -2,7 +2,7 @@ Mosaic Access Test
 ==================
 ### Requisitos previos
 * Tener instalado PHP > 5.4
-* Tener instalada la extensión php-sqlite3
+* Tener instaladas las extensiones php-sqlite3, php-xml, php-mbstring
 
 ### Recomendaciones
 * Utilizar el built-in PHP web server: php bin/console ...
