@@ -28,7 +28,7 @@ class Product
      *
      */
     public function __construct(){
-        //ToDo 8: Implement create product.
+        //ToDo 8: Implement create product. Assume input data is correct
     }
 
     /**
