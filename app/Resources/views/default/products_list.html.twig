@@ -4,7 +4,9 @@
     <h1>Product list</h1>
     <ul>
         {# ToDo 9: Get products and iterate over them and set them in the list #}
-        <li>{{ custom_format_string.__invoke("(product name here)") }} - (product EAN here) - (product price here) &euro;</li>
+        {% for product in products %}
+            <li>{{ custom_format_string.__invoke(product.getName()) }} - {{product.getEan()}} - {{product.getPrice()}} &euro;</li>
+        {% endfor %}
     </ul>
     <hr/>
     {# ToDo 14: Change import method invocation to POST#}

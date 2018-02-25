@@ -10,5 +10,6 @@ class StringFormat
      */
     public function __invoke($originalString){
         //ToDo 13: Implement function
+        return $originalString;
     }
 }

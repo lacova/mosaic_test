@@ -4,5 +4,6 @@ homepage:
 
 import:
   path: /import_products
+  defaults: { _controller: AppBundle:Default:import }
 # ToDo 10: Complete import action route definition. / ToDo 14:  Restrict route to accept only POST requests.
 
